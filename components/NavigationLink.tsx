@@ -3,7 +3,6 @@
 import clsx from 'clsx';
 import Link from 'next-intl/link';
 import {usePathname} from 'next-intl/client';
-import {useSelectedLayoutSegment} from 'next/navigation';
 import type {ComponentProps} from 'react';
 
 type NavigationLinkProps = Omit<ComponentProps<typeof Link>, 'href'> & {

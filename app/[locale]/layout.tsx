@@ -1,9 +1,10 @@
-import { redirect, notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import { createTranslator, NextIntlClientProvider } from "next-intl";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { LanguageLink } from "@/components/LanguageLink";
+import { NavigationLink } from "@/components/NavigationLink";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -55,6 +56,10 @@ export default async function LocaleLayout({
               <LanguageLink locale="en">English</LanguageLink>
               <LanguageLink locale="ro">Romana</LanguageLink>
               <LanguageLink locale="ru">Русский</LanguageLink>
+            </nav>
+            <nav>
+              <NavigationLink href="/managers-category">Manager</NavigationLink>
+              <NavigationLink href="/star-wars-category">Star Wars</NavigationLink>
             </nav>
             <div>{children}</div>
           </main>

@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import Link from 'next-intl/link';
 import {usePathname} from 'next-intl/client';
-import {useTranslations, useLocale} from 'next-intl';
+import {useLocale} from 'next-intl';
 import type {ComponentProps} from 'react';
 
 type LanguageLinkProps = Omit<ComponentProps<typeof Link>, 'href' | 'locale'> & {
