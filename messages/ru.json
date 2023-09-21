@@ -2,5 +2,8 @@
   "common": {
     "title": "Next Intl - Пример",
     "hello": "Привет"
+  },
+  "managers": {
+    "title": "Менеджеры"
   }
 }
