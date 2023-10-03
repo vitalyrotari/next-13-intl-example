@@ -58,6 +58,7 @@ export default async function LocaleLayout({
               <LanguageLink locale="ru">Русский</LanguageLink>
             </nav>
             <nav>
+              <NavigationLink href="/users">Users</NavigationLink>
               <NavigationLink href="/managers-category">Manager</NavigationLink>
               <NavigationLink href="/star-wars-category">Star Wars</NavigationLink>
             </nav>
