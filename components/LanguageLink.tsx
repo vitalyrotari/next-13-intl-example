@@ -1,13 +1,12 @@
 'use client';
 
 import clsx from 'clsx';
-import Link from 'next-intl/link';
-import {usePathname} from 'next-intl/client';
+import { Link, usePathname, locales } from '@/navigation'
 import {useLocale} from 'next-intl';
 import type {ComponentProps} from 'react';
 
 type LanguageLinkProps = Omit<ComponentProps<typeof Link>, 'href' | 'locale'> & {
-  locale: string;
+  locale: typeof locales[number];
 };
 
 export const LanguageLink = ({locale, ...rest}: LanguageLinkProps) => {
